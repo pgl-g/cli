@@ -13,8 +13,10 @@ const figlet = require('figlet');
 // 设置loading效果
 const ora = require('ora');
 
+const { version } = require('./package.json')
+
 // 设置包名、版本名
-// program.name("pgl").usage(`<command>[option]`).version(`0.0.1`); 
+program.name("pgl-cli").usage(`<command>[option]`).version(`v${version}`); 
 program
 .command("create <project-name>")// 增加创建命令
 .description("create a new project") // 增加描述文件
@@ -24,15 +26,15 @@ program
     require("./lib/create")(projectName, cmd);
 })
 
-program
-.command("create <project-name>")// 增加创建命令
-.description("create a new project") // 增加描述文件
-.option("-g, --get <key>", "get value by key") // 增加命令行参数 强制覆盖
-.option("-s, --set <key>", "set option[key] is value") // 增加命令行参数 强制覆盖
-.option("-d, --delete <key>", "delete option by key") // 增加命令行参数 强制覆盖
-.action((value, keys) => {
-    console.log(value, keys);
-})
+// program
+// .command("create <project-name>")// 增加创建命令
+// .description("create a new project") // 增加描述文件
+// .option("-g, --get <key>", "get value by key") // 增加命令行参数 强制覆盖
+// .option("-s, --set <key>", "set option[key] is value") // 增加命令行参数 强制覆盖
+// .option("-d, --delete <key>", "delete option by key") // 增加命令行参数 强制覆盖
+// .action((value, keys) => {
+//     console.log(value, keys);
+// })
 
 program.on("--help", function(){
     console.log(
