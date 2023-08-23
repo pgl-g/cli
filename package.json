@@ -1,6 +1,6 @@
 {
   "name": "pgl-cli",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "axios": "^1.4.0",
     "chalk": "^4.0.0",
     "commander": "^9.0.0",
-    "download-git-repo": "^3.0.2",
+    "download-git-repo": "^0.0.2",
     "figlet": "^1.5.2",
     "inquirer": "^8.2.1",
     "ora": "^5.0.0"
