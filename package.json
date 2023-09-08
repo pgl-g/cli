@@ -1,6 +1,6 @@
 {
-  "name": "create-pgl-app",
-  "version": "0.0.8",
+  "name": "pgl-cli",
+  "version": "0.0.9",
   "description": "",
   "main": "index.js",
   "scripts": {
