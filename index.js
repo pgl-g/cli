@@ -39,10 +39,6 @@ program.on("--help", function(){
     );
 })
 
-
-
-// console.log(`${chalk.green.underline.bold("for")} me`);
-
 // new inquirer.prompt([
 //     {
 //         name: 'vue',
