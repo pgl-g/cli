@@ -13,6 +13,7 @@ const figlet = require('figlet');
 // 设置loading效果
 const ora = require('ora');
 
+// 覆盖提交
 const { version } = require('./package.json')
 
 // 设置包名、版本名
